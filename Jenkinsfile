@@ -23,7 +23,7 @@ stages {
             steps {
                 echo "Checking the quality of the code"
             }
-	}
+	    }
         stage('Deploy') {
             steps {
                 echo "Deploying the application to a testing environment specified by the environment variable"
@@ -32,7 +32,7 @@ stages {
         stage('Approval') {
             steps {
                 echo "Waiting for manual approval..."
-                sh 'sleep 10' 
+                //sh 'sleep 10' 
             }
         }
         stage('Deploy to Production') {
