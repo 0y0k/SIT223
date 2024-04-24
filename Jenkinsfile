@@ -24,15 +24,6 @@ stages {
             }
         }
         
-        stage('Deploy to Production') {
-            when {
-                branch 'master'
-            }
-            steps {
-                echo "Deploying to production environment: ${env.PRODUCTION_ENVIRONMENT}"
-            }
-        }
-
         stage('Code Quality Check') {
             steps {
                 echo "Checking the quality of the code"
