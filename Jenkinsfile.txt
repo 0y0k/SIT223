@@ -6,7 +6,7 @@
 		PRODUCTION_ENVIRONMENT = 'Junyi Yang'
 	
 	}
-}
+
 
 stages {
         stage('Build') {
